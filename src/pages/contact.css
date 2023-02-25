@@ -1,0 +1,134 @@
+:root {
+    --desktop-contact-image: url('../assets/contact/bg-image4-desktop.jpg');
+    --tablet-contact-image: url('../assets/contact/bg-image4-tablet.jpg');
+    --mobile-contact-image: url('../assets/contact/bg-image4-mobile.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+.contact {
+    background: var(--desktop-contact-image) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+
+.contact-text {
+    position: absolute;
+    top: 38vh;
+    color: white;
+    position: absolute;
+    left: 165px;
+    width: 450px;
+    height: 382px;
+}
+
+
+.big-text {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+}
+.small-text {
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.contact-button {
+    font-family: 'Bellefair', serif;
+    font-size: 20px;
+}
+
+.yerr{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-loadmore {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+    bottom: 18vh;
+    right: 13vw;
+    font-family: var(--font-family);
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, rgb(171, 140, 255) 0, #2b47ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    will-change: box-shadow,transform;
+  }
+  
+.button-loadmore:hover {
+    box-shadow: rgba(255, 255, 255, 0.4) 0 4px 8px, rgba(255, 255, 255, 0.3) 0 7px 13px -3px, rgb(255, 255, 255) 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+@media(max-width:1500px) {
+    .space-text {
+        font-size: 70px;
+    }
+
+}
+
+/* Tablet view */
+@media(max-width:1020px) {
+    .contact{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        gap: 40vh;
+        flex-direction: column;
+        background: var(--tablet-contact-image) no-repeat;
+        background-position:center ;
+        background-size: cover;
+    }
+
+    .contact-text {
+        padding-top: 30vh;
+        position: static;
+        text-align: center;
+    }
+
+    .big-text {
+        font-size: 50px;
+    }
+
+    .yerr {
+        position: static;
+        margin-bottom: 5vh;
+    }
+    .button-loadmore{
+        position: static;
+        margin-bottom: 5vh;
+    }
+}
+
+/* Phone view */
+@media(max-width: 520px) {
+    .contact-text {
+        font-size: 15px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .big-text {
+        font-size: 50px;
+    }
+
+}

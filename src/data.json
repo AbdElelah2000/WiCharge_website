@@ -1,0 +1,50 @@
+{
+  "technology": [
+    {
+      "name": "Wireless charging",
+      "images": {
+        "portrait": "./assets/feature/image-wireless_charger-portrait.png",
+        "landscape": "./assets/feature/image-wireless_charger-landscape.png"
+      },
+      "description": "Our EV charger uses wireless technology to charge your car, so you don't have to mess with cords or cables. Simply park your car over the charging pad and let the charger do the rest."
+    },
+    {
+      "name": "Fast charging",
+      "images": {
+        "portrait": "./assets/feature/image-fast-portrait.jpg",
+        "landscape": "./assets/feature/image-fast-landscape.jpg"
+      },
+      "description": "Our charger is designed to deliver fast charging speeds, so you can get back on the road quickly. It can deliver up to 350 kW of power to your car."
+    },
+    {
+      "name": "Easy installation",
+      "images": {
+        "portrait": "./assets/feature/image-install-portrait.png",
+        "landscape": "./assets/feature/image-install-landscape.jpg"
+      },
+      "description": "Our charger is easy to install and can be set up in just a few hours on most electric vehicles currently on the market. We offer professional installation services to ensure that your charger is set up correctly."
+    }
+  ],
+  "prod": [
+    {
+      "name": "Default",
+      "images": {
+        "png": "./assets/prod/image-wirelesscharger.png",
+        "webp": "./assets/prod/image-wirelesscharger.webp"
+      },
+      "description": "Utilizes DC supply to fast charge vehicles in charging stations on the go.",
+      "distance": "60 to 80 miles",
+      "power": "up to 350 kW of power"
+    },
+    {
+      "name": "Solar",
+      "images": {
+        "png": "./assets/prod/image-solar.png",
+        "webp": "./assets/prod/image-solar.webp"
+      },
+      "description": "Utilizes solar energy to fast charge vehicles in charging stations on the go.",
+      "distance": "1 to 5 miles",
+      "power": "up to 300 W of power"
+    }
+  ]
+}

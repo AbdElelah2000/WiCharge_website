@@ -1,0 +1,125 @@
+/* Default: desktop view*/
+:root {
+    --desktop-index-image: url('../assets/home/background-image2-desktop.jpg');
+    --tablet-index-image: url('../assets/home/background-image2-tablet.jpg');
+    --mobile-index-image: url('../assets/home/background-image2-mobile.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+.homepage {
+    background: var(--desktop-index-image) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+
+.info {
+    position: absolute;
+    top: 38vh;
+    color: white;
+    position: absolute;
+    left: 165px;
+    width: 450px;
+    height: 382px;
+}
+
+.first-phrase {
+    display: block;
+    letter-spacing: 4.725px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+}
+
+.space-text {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+}
+.space-paragraph {
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.explore {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+
+#circle :hover {
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 18vh;
+    right: 13vw;
+    background: rgb(255, 255, 255);
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+}
+
+@media(max-width:1500px) {
+    .space-text {
+        font-size: 70px;
+    }
+
+}
+
+/* Tablet view */
+@media(max-width:1020px) {
+    .homepage{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30vh;
+        flex-direction: column;
+        background: var(--tablet-index-image) no-repeat;
+        background-position:center ;
+        background-size: cover;
+    }
+
+    .info {
+        padding-top: 30vh;
+        position: static;
+        text-align: center;
+    }
+
+    .space-text {
+        font-size: 50px;
+    }
+
+    #circle {
+        position: static;
+        margin-bottom: 5vh;
+    }
+}
+
+/* Phone view */
+@media(max-width: 520px) {
+    .info {
+        font-size: 15px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .space-text {
+        font-size: 50px;
+    }
+
+    .first-phrase {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+}
