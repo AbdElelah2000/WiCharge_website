@@ -1,7 +1,7 @@
 :root {
-    --desktop-destination-image: url('../assets/prod/background-image1-desktop.jpg');
-    --tablet-destination-image: url('../assets/prod/background-image1-tablet.jpg');
-    --mobile-destination-image: url('../assets/prod/background-image1-mobile.jpg');
+    --desktop-product-image: url('../assets/prod/background-image1-desktop.jpg');
+    --tablet-product-image: url('../assets/prod/background-image1-tablet.jpg');
+    --mobile-product-image: url('../assets/prod/background-image1-mobile.jpg');
 }
 
 /* * { border: 1px solid red; }  */
@@ -15,8 +15,8 @@
 }
 
 
-.destination {
-    background: var(--desktop-destination-image) no-repeat;
+.product {
+    background: var(--desktop-product-image) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,7 +44,7 @@
     opacity: 0.25;
 }
 
-.destination-info {
+.product-info {
     position: absolute;
     right: 10vw;
     bottom: 10vh;
@@ -52,7 +52,7 @@
     height: 472px;
 }
 
-.destination-nav {
+.product-nav {
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
@@ -61,17 +61,17 @@
     height: 40px;
 }
 
-.active-destination {
+.active-product {
     border-bottom: 3px solid white;
 }
 
-.nav-item-destination {
+.nav-item-product {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.destination-name {
+.product-name {
     text-transform: uppercase;
     display: inline-block;
     margin-top: 20px;
@@ -82,7 +82,7 @@
     line-height: 115px;
 }
 
-.destination-description {
+.product-description {
     margin-top: 20px;
     margin-bottom: 50px;
     font-family: Barlow;
@@ -98,14 +98,14 @@
     border: 0; 
 }
 
-.destination-time {
+.product-time {
     text-transform: uppercase;
     margin-top: 20px;
     display: flex;
     gap: 80px;
 }
 
-.destination-time-title {
+.product-time-title {
     font-family: Barlow Condensed;
     font-style: normal;
     font-weight: normal;
@@ -114,7 +114,7 @@
     letter-spacing: 2.3625px;
 }
 
-.destination-time-info {
+.product-time-info {
     margin-top: 10px;
     font-family: Bellefair;
     font-style: normal;
@@ -123,7 +123,7 @@
     line-height: 32px;
 }
 
-.destination-image {
+.product-image {
     animation: float 4s ease-in-out infinite;
     position: absolute;
     left: 10vw;
@@ -134,11 +134,11 @@
 
 @media(max-width:1500px) {
     
-    .destination-name {
+    .product-name {
         font-size: 50px;
     }
 
-    .destination-info{
+    .product-info{
         right: 10vw;
         bottom: 0vh;
     }
@@ -149,7 +149,7 @@
 
 @media(max-width:1020px) {
 
-    .destination {
+    .product {
         position: fixed;
         z-index: -1;
         overflow: scroll;
@@ -162,12 +162,12 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background: var(--tablet-destination-image);
+        background: var(--tablet-product-image);
         background-position:center ;
         background-size: cover;
     }
 
-    .destination-info {
+    .product-info {
         position: static;
         margin-bottom: 5vh;
         text-align: center;
@@ -188,7 +188,7 @@
         justify-content: center;
     }
 
-    .destination-image {
+    .product-image {
         top: -5vh;
         position: relative;
         display: block;
@@ -199,7 +199,7 @@
         position: static;
     }
 
-    .destination-nav,.destination-time {
+    .product-nav,.product-time {
         justify-content: center;
     }
 }
@@ -215,25 +215,25 @@
         top: 8vh;
     }
 
-    .destination {
+    .product {
         width: 100vw;
         overflow: overlay;
     }
 
-    .destination-name {
+    .product-name {
         font-size: 56px;
     }
 
-    .destination-time {
+    .product-time {
         flex-direction: column;
         gap: 50px;
     }
 
-    .destination-time-wrapper {
+    .product-time-wrapper {
         margin-top: 40px;
     }
 
-    .destination-info {
+    .product-info {
         padding-left: 5vw;
         padding-right: 5vw;
         font-size: 14px;
@@ -244,17 +244,17 @@
         clear: both;
     }
 
-    .destination-time, .destination-name {
+    .product-time, .product-name {
         margin-top: 0px;
     }
 
-    .destination-time-wrapper {
+    .product-time-wrapper {
         position: relative;
         bottom: 0px;
         display: block;
     }
 
-    .destination-description {
+    .product-description {
         margin-top: 10px;
         margin-bottom: 10px;
     }

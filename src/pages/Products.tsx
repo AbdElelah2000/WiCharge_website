@@ -9,21 +9,21 @@ export default function Products() {
 
     return (
 
-        <main className="destination">
+        <main className="product">
             <div className='content dest'>
                 <span className='page-title'><span className='page-number'>01</span> LEARN MORE ABOUT OUR CHARGERS</span>
                 <div className='img-wrapper'>
-                    <img src={data.prod[ProdIndex].images.png} className='destination-image' alt="img"/>
+                    <img src={data.prod[ProdIndex].images.png} className='product-image' alt="img"/>
                 </div>
 
-                <section className='destination-info'>
+                <section className='product-info'>
 
-                    <nav className='destination-nav'>
+                    <nav className='product-nav'>
                         {
                             data.prod.map((product, index) => {
                                 if (index === ProdIndex) {
                                     return (
-                                        <span onClick={(event) => { getProdIndex(event, index); }} key={index} className='nav-item active-destination' data-index={index}>{product.name}</span>
+                                        <span onClick={(event) => { getProdIndex(event, index); }} key={index} className='nav-item active-product' data-index={index}>{product.name}</span>
                                     )
                                 }
                                 return (
@@ -33,21 +33,21 @@ export default function Products() {
                         }
                     </nav>
 
-                    <span className='destination-name'>{data.prod[ProdIndex].name}</span>
+                    <span className='product-name'>{data.prod[ProdIndex].name}</span>
 
-                    <p className='destination-description'>{data.prod[ProdIndex].description}</p>
+                    <p className='product-description'>{data.prod[ProdIndex].description}</p>
 
                     <hr className='dest-line'/>
                     
-                    <div className='destination-time-wrapper'>
-                        <div className='destination-time'>
+                    <div className='product-time-wrapper'>
+                        <div className='product-time'>
                             <div>
-                                <p className='destination-time-title'>Dist. After 20 mins</p>
-                                <p className='destination-time-info'>{data.prod[ProdIndex].distance}</p>
+                                <p className='product-time-title'>Dist. After 20 mins</p>
+                                <p className='product-time-info'>{data.prod[ProdIndex].distance}</p>
                             </div>
                             <div>
-                                <p className='destination-time-title'>Power</p>
-                                <p className='destination-time-info'>{data.prod[ProdIndex].power}</p>
+                                <p className='product-time-title'>Power</p>
+                                <p className='product-time-info'>{data.prod[ProdIndex].power}</p>
                             </div>
                         </div>
                         <div className='test'></div>
