@@ -137,6 +137,11 @@
     .destination-name {
         font-size: 50px;
     }
+
+    .destination-info{
+        right: 10vw;
+        bottom: 0vh;
+    }
 }
 
 
